@@ -1,0 +1,12 @@
+version: 2
+
+models:
+  - name: silver_listings
+    config:
+      materialized: table
+  - name: silver_bookings
+    config:
+      materialized: table
+  - name: silver_hosts
+    config:
+      materialized: table

@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: SOURCE_DATA
+    database: SNOWFLAKE_DBT
+    schema: SOURCE_SCHEMA
+    tables:
+      - name: bookings
+      - name: listings
+      - name: hosts

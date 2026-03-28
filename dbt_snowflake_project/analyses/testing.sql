@@ -1,0 +1,1 @@
+select * from SNOWFLAKE_DBT.BRONZE.bookings;

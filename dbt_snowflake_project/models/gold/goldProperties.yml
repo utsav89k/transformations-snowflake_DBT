@@ -1,0 +1,18 @@
+version: 2
+
+models:
+  - name: dim_bookings
+    config:
+      materialized: table
+  - name: dim_listings
+    config:
+      materialized: table
+  - name: dim_hosts
+    config:
+      materialized: table
+  - name: fact
+    config:
+      materialized: table
+  - name: obt
+    config:
+      materialized: table

@@ -1,0 +1,34 @@
+version: 2
+
+models:
+  - name: bookings
+    config:
+      materialized: table
+    columns:
+      - name: booking_id
+        tests:
+          - unique
+          - not_null
+      - name: BOOKING_AMOUNT
+        tests:
+          - check_non_negative
+  - name: listings
+    config:
+      materialized: table
+    columns:
+      - name: listing_id
+        tests:
+          - unique
+          - not_null
+      - name: PRICE_PER_NIGHT
+        tests:
+          - check_non_negative
+
+  - name: hosts
+    config:
+      materialized: table
+    columns:
+      - name: host_id
+        tests:
+          - unique
+          - not_null

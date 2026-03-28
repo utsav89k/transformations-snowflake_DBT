@@ -1,0 +1,1 @@
+select * from {{ source('SOURCE_DATA', 'bookings') }}
